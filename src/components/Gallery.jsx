@@ -148,6 +148,7 @@ import img117 from "../assets/117.jpeg";
 import img118 from "../assets/118.jpeg";
 import img119 from "../assets/119.jpeg";
 import img120 from "../assets/120.jpeg";
+import img122 from "../assets/122.jpeg";
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -298,6 +299,7 @@ export default function Gallery() {
     { src: img118, alt: 'other', category: 'Other' },
     { src: img119, alt: 'other', category: 'Other' },
     { src: img120, alt: 'other', category: 'Other' },
+    { src: img122, alt: 'other', category: 'Other' },
   ], []);
 
   const categories = ['All', 'Campus', 'Program', 'Activities', 'Events', "Class Room", "Other"];
