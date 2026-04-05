@@ -22,7 +22,8 @@ export default function Admission() {
   ];
 
   return (
-    <section id="admission" className="py-24 bg-white relative">
+    // FIX: Added id="admission" and scroll-mt-24 to prevent the Navbar from covering the title
+    <section id="admission" className="py-24 bg-white relative scroll-mt-20 md:scroll-mt-24">
       <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
         <div className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"></div>
       </div>
@@ -110,10 +111,14 @@ export default function Admission() {
                 <li className="pl-2">Aadhar Card copy</li>
                 <li className="pl-2">Migration Certificate (if applicable)</li>
               </ul>
-              
+
               <div className="mt-8 pt-6 border-t border-blue-200">
                 <a
                   href="#contact"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                  }}
                   className="block w-full text-center px-6 py-4 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-xl shadow-lg transition-colors duration-300"
                 >
                   Enquire Now

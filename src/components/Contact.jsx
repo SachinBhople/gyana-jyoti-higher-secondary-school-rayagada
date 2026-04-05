@@ -16,19 +16,20 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     // Replace with school's actual WhatsApp number (include country code, without +)
-    const phoneNumber = '919583931222'; 
-    
+    const phoneNumber = '919583931222';
+
     const text = `*New Admission Inquiry*%0A%0A*Name:* ${formData.name}%0A*Phone:* ${formData.phone}%0A*Message:* ${formData.message}`;
-    
+
     const url = `https://wa.me/${phoneNumber}?text=${text}`;
-    
+
     window.open(url, '_blank');
   };
 
   return (
-    <section id="contact" className="py-24 bg-gray-50 relative overflow-hidden">
+    // FIX: Added id="contact" and scroll-mt-24 for the Navbar scroll logic
+    <section id="contact" className="py-24 bg-gray-50 relative overflow-hidden scroll-mt-20 md:scroll-mt-24">
       <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-orange-100 blur-3xl opacity-50 z-0"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -60,7 +61,7 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
           <div className="p-8 md:p-12 bg-gradient-to-br from-blue-900 to-indigo-900 text-white relative">
             <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
-            
+
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -81,7 +82,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-xl mb-1 text-orange-400">Our Location</h4>
-                    <p className="text-blue-50/80 text-lg">Gyana Jyoti Higher Secondary School,<br />Rayagada, Odisha</p>
+                    <p className="text-blue-50/80 text-lg">sbi adb , kapilash Road,<br />Rayagada, Odisha</p>
                   </div>
                 </div>
 
@@ -91,9 +92,12 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-xl mb-1 text-orange-400">Phone</h4>
-                    <p className="text-blue-50/80 text-lg">+91 94376 43643</p>
-                    <p className="text-blue-50/80 text-lg">+91 86583 72642</p>
-                    <p className="text-blue-50/80 text-lg">+91 95839 31222</p>
+                    {/* ENHANCEMENT: Made phone numbers clickable for mobile users */}
+                    <div className="space-y-1">
+                      <a href="tel:+919437643643" className="block text-blue-50/80 text-lg hover:text-green-400 transition-colors">+91 94376 43643</a>
+                      <a href="tel:+918658372642" className="block text-blue-50/80 text-lg hover:text-green-400 transition-colors">+91 86583 72642</a>
+                      <a href="tel:+919583931222" className="block text-blue-50/80 text-lg hover:text-green-400 transition-colors">+91 95839 31222</a>
+                    </div>
                     <p className="text-blue-50/60 text-sm mt-2"><span className="text-orange-400/80 font-semibold">MD:</span> Manoj Kumar Padhi</p>
                   </div>
                 </div>
@@ -104,7 +108,9 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-xl mb-1 text-orange-400">Email</h4>
-                    <p className="text-blue-50/80 text-lg">info@gyanajyoti.edu.in</p>
+                    <a href="mailto:gyanajyotihsschoolrayagada@gmail.com" className="text-blue-50/80 text-lg hover:text-green-400 transition-colors break-all">
+                      gyanajyotihsschoolrayagada@gmail.com
+                    </a>
                   </div>
                 </div>
               </div>
@@ -120,7 +126,7 @@ export default function Contact() {
             <h3 className="text-2xl font-bold text-gray-900 mb-8 border-l-4 border-orange-500 pl-4 py-1">
               Send us a Message
             </h3>
-            
+
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">

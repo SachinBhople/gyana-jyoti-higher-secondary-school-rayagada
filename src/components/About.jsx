@@ -25,12 +25,14 @@ export default function About() {
   ];
 
   return (
+    // FIX: Added id="about" so the Navbar can find this section
     <section id="about" className="py-24 bg-gray-50 relative overflow-hidden">
       {/* Decorative blobs */}
       <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-blue-100 blur-3xl opacity-50 z-0"></div>
       <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-orange-100 blur-3xl opacity-50 z-0"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        {/* ... Rest of your code stays the same ... */}
         <div className="text-center mb-16">
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
@@ -105,7 +107,7 @@ export default function About() {
               className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100 group relative overflow-hidden"
             >
               <div className="absolute -right-10 -top-10 w-32 h-32 bg-gray-50 rounded-full group-hover:bg-blue-50 transition-colors duration-500 z-0"></div>
-              
+
               <div className="relative z-10">
                 <div className="mb-6 p-4 bg-gray-50 inline-block rounded-2xl group-hover:bg-white shadow-sm transition-colors object-contain">
                   {card.icon}

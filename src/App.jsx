@@ -14,14 +14,14 @@ function App() {
   return (
     <div className="font-sans antialiased text-gray-900 bg-gray-50 overflow-x-hidden selection:bg-orange-400 selection:text-white">
       <Navbar />
-      <Hero />
-      <About />
-      <Faculty />
-      <Facilities />
-      <Rules />
-      <Gallery />
-      <Admission />
-      <Contact />
+      <section id="home" className="scroll-mt-20 lg:scroll-mt-24"><Hero /></section>
+      <section id="about" className="scroll-mt-20 lg:scroll-mt-24"><About /></section>
+      <section id="faculty" className="scroll-mt-20 lg:scroll-mt-24"><Faculty /></section>
+      <section id="facilities" className="scroll-mt-20 lg:scroll-mt-24"><Facilities /></section>
+      <section id="rules" className="scroll-mt-20 lg:scroll-mt-24"><Rules /></section>
+      <section id="gallery" className="scroll-mt-20 lg:scroll-mt-24"><Gallery /></section>
+      <section id="admission" className="scroll-mt-20 lg:scroll-mt-24"><Admission /></section>
+      <section id="contact" className="scroll-mt-20 lg:scroll-mt-24"><Contact /></section>
       <Footer />
       <FloatingWhatsApp />
     </div>

@@ -3,6 +3,7 @@ import heroBg from '../assets/image-1.jpeg';
 
 export default function Hero() {
   return (
+    // CRITICAL FIX: Added id="home" here
     <section id="home" className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
@@ -21,7 +22,7 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="bg-white/10 backdrop-blur-md p-6 sm:p-8 md:p-12 rounded-3xl border border-white/20 shadow-2xl mx-2 sm:mx-0"
         >
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2, duration: 0.6 }}
@@ -67,12 +68,21 @@ export default function Hero() {
           >
             <a
               href="#admission"
+              onClick={(e) => {
+                // This ensures internal buttons also use the smooth scroll
+                e.preventDefault();
+                document.getElementById('admission')?.scrollIntoView({ behavior: 'smooth' });
+              }}
               className="px-8 py-3.5 bg-orange-500 hover:bg-orange-600 text-white rounded-full font-bold shadow-xl hover:shadow-orange-500/30 transition-all duration-300 transform hover:-translate-y-1"
             >
               Apply for Admission
             </a>
             <a
               href="#contact"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+              }}
               className="px-8 py-3.5 bg-white/10 hover:bg-white/20 text-white border border-white/40 rounded-full font-bold backdrop-blur-sm shadow-xl transition-all duration-300 transform hover:-translate-y-1"
             >
               Contact Us

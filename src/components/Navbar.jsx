@@ -17,29 +17,55 @@ const navItems = [
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const scrollToSection = (e, href) => {
+    if (e) e.preventDefault();
+    setIsOpen(false);
+
+    const targetId = href.replace('#', '');
+    const elem = document.getElementById(targetId);
+
+    if (elem) {
+      // Use a small timeout to ensure state transitions don't block the scroll behavior
+      setTimeout(() => {
+        elem.scrollIntoView({ 
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }, 50);
+    } else {
+      console.warn(`Section with ID ${targetId} not found!`);
+    }
+  };
+
   return (
-    <nav className="fixed w-full bg-white/95 backdrop-blur-sm shadow-md z-50">
+    <nav className="fixed w-full bg-white/95 backdrop-blur-sm shadow-md z-[9999]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20 md:h-24 transition-all duration-300">
-          <div className="flex-1 flex items-center min-w-0 pr-2">
-            <a href="#home" className="flex items-center gap-2 sm:gap-3 group shrink min-w-0">
-              <div className="bg-white p-1 sm:p-1.5 rounded-full shadow-sm group-hover:shadow-md transition-shadow shrink-0">
-                <img className="h-9 w-auto sm:h-12 md:h-14 lg:h-16 transform group-hover:scale-105 transition-transform" src={logo} alt="Gyana Jyoti School Logo" />
+        <div className="flex justify-between items-center h-20 md:h-24">
+
+          <div className="flex items-center shrink-0 pr-4">
+            <a
+              href="#home"
+              onClick={(e) => scrollToSection(e, '#home')}
+              className="flex items-center gap-2 sm:gap-3 group"
+            >
+              <div className="bg-white p-1 rounded-full shadow-sm group-hover:shadow-md transition-shadow">
+                <img className="h-10 w-auto sm:h-12 md:h-14 lg:h-16" src={logo} alt="Logo" />
               </div>
-              <div className="flex flex-col min-w-0">
-                <span className="font-extrabold text-[13px] sm:text-lg md:text-xl lg:text-2xl text-blue-900 leading-none tracking-tight truncate">GYANA JYOTI</span>
-                <span className="text-[7.5px] sm:text-[11px] md:text-xs lg:text-sm font-bold text-orange-600 leading-tight uppercase mt-0.5 truncate">Higher Secondary School</span>
+              <div className="flex flex-col">
+                <span className="font-extrabold text-sm sm:text-lg md:text-xl lg:text-2xl text-blue-900 leading-none">GYANA JYOTI</span>
+                <span className="text-[8px] sm:text-[11px] md:text-xs lg:text-sm font-bold text-orange-600 uppercase mt-0.5">Higher Secondary School</span>
               </div>
             </a>
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden lg:flex items-center justify-end flex-1 space-x-4 xl:space-x-8">
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 uppercase text-sm tracking-wider"
+                onClick={(e) => scrollToSection(e, item.href)}
+                className="text-gray-700 hover:text-blue-600 font-bold transition-colors duration-200 uppercase text-xs xl:text-sm tracking-wider"
               >
                 {item.name}
               </a>
@@ -47,33 +73,32 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center">
+          <div className="lg:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-700 hover:text-blue-600 p-2 focus:outline-none"
+              className="text-gray-800 hover:text-blue-600 p-2 rounded-lg focus:outline-none"
             >
-              {isOpen ? <X size={28} /> : <Menu size={28} />}
+              {isOpen ? <X size={32} /> : <Menu size={32} />}
             </button>
           </div>
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white border-t border-gray-100 overflow-hidden"
+            className="lg:hidden bg-white border-t border-gray-100 overflow-hidden"
           >
-            <div className="px-4 pt-2 pb-6 space-y-1 shadow-lg">
+            <div className="px-4 py-6 space-y-2">
               {navItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  onClick={() => setIsOpen(false)}
-                  className="block px-3 py-3 rounded-md text-base font-medium text-gray-800 hover:text-blue-600 hover:bg-blue-50 transition-colors"
+                  onClick={(e) => scrollToSection(e, item.href)}
+                  className="block px-4 py-4 rounded-xl text-lg font-bold text-gray-800 hover:text-blue-600 hover:bg-blue-50 transition-all"
                 >
                   {item.name}
                 </a>

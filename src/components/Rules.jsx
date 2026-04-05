@@ -19,9 +19,10 @@ export default function Rules() {
   ];
 
   return (
-    <section id="rules" className="py-24 bg-gray-50 relative overflow-hidden">
+    // FIX: Added id="rules" and scroll-mt-24 for the Navbar scroll logic
+    <section id="rules" className="py-24 bg-gray-50 relative overflow-hidden scroll-mt-20 md:scroll-mt-24">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(circle_at_center,_transparent_0%,_rgba(0,0,0,0.02)_100%)] pointer-events-none"></div>
-      
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <motion.div

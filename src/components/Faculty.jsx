@@ -26,9 +26,10 @@ export default function Faculty() {
   ];
 
   return (
-    <section id="faculty" className="py-24 bg-white relative overflow-hidden">
+    // FIX: Added id="faculty" and scroll-mt-24 for navigation support
+    <section id="faculty" className="py-24 bg-white relative overflow-hidden scroll-mt-20 md:scroll-mt-24">
       <div className="absolute top-0 left-0 w-64 h-64 bg-orange-100/50 rounded-full blur-3xl -ml-32 -mt-32"></div>
-      
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <motion.div

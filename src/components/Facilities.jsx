@@ -62,7 +62,8 @@ export default function Facilities() {
   ];
 
   return (
-    <section id="facilities" className="py-24 bg-white relative">
+    // FIX: Added id="facilities" and scroll-mt-24 for navigation support
+    <section id="facilities" className="py-24 bg-white relative scroll-mt-20 md:scroll-mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
           <motion.div
