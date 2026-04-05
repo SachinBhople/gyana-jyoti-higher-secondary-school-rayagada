@@ -127,6 +127,27 @@ import img96 from "../assets/96.jpeg";
 import img97 from "../assets/97.jpeg";
 import img98 from "../assets/98.jpeg";
 import img99 from "../assets/99.jpeg";
+import img100 from "../assets/100.jpeg";
+import img101 from "../assets/101.jpeg";
+import img102 from "../assets/102.jpeg";
+import img103 from "../assets/103.jpeg";
+import img104 from "../assets/104.jpeg";
+import img105 from "../assets/105.jpeg";
+import img106 from "../assets/106.jpeg";
+import img107 from "../assets/107.jpeg";
+import img108 from "../assets/108.jpeg";
+import img109 from "../assets/109.jpeg";
+import img110 from "../assets/110.jpeg";
+import img111 from "../assets/111.jpeg";
+import img112 from "../assets/112.jpeg";
+import img113 from "../assets/113.jpeg";
+import img114 from "../assets/114.jpeg";
+import img115 from "../assets/115.jpeg";
+import img116 from "../assets/116.jpeg";
+import img117 from "../assets/117.jpeg";
+import img118 from "../assets/118.jpeg";
+import img119 from "../assets/119.jpeg";
+import img120 from "../assets/120.jpeg";
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -256,6 +277,27 @@ export default function Gallery() {
     { src: img97, alt: 'other', category: 'Other' },
     { src: img98, alt: 'other', category: 'Other' },
     { src: img99, alt: 'other', category: 'Other' },
+    { src: img100, alt: 'other', category: 'Other' },
+    { src: img101, alt: 'other', category: 'Other' },
+    { src: img102, alt: 'other', category: 'Other' },
+    { src: img103, alt: 'other', category: 'Other' },
+    { src: img104, alt: 'other', category: 'Other' },
+    { src: img105, alt: 'other', category: 'Other' },
+    { src: img106, alt: 'other', category: 'Other' },
+    { src: img107, alt: 'other', category: 'Other' },
+    { src: img108, alt: 'other', category: 'Other' },
+    { src: img109, alt: 'other', category: 'Other' },
+    { src: img110, alt: 'other', category: 'Other' },
+    { src: img111, alt: 'other', category: 'Other' },
+    { src: img112, alt: 'other', category: 'Other' },
+    { src: img113, alt: 'other', category: 'Other' },
+    { src: img114, alt: 'other', category: 'Other' },
+    { src: img115, alt: 'other', category: 'Other' },
+    { src: img116, alt: 'other', category: 'Other' },
+    { src: img117, alt: 'other', category: 'Other' },
+    { src: img118, alt: 'other', category: 'Other' },
+    { src: img119, alt: 'other', category: 'Other' },
+    { src: img120, alt: 'other', category: 'Other' },
   ], []);
 
   const categories = ['All', 'Campus', 'Program', 'Activities', 'Events', "Class Room", "Other"];
