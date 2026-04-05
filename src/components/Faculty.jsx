@@ -8,7 +8,6 @@ export default function Faculty() {
     { name: "H. Behera", designation: "Lecturer in English", icon: <Users className="w-5 h-5" /> },
     { name: "CMA G. T. Rao", designation: "Lecturer in Commerce", icon: <Users className="w-5 h-5" /> },
     { name: "Satya Ranjan Satapathy", designation: "Lecturer in Odia", icon: <Users className="w-5 h-5" /> },
-    { name: "Prafull Kumar Swain", designation: "Lecturer in Commerce", icon: <Users className="w-5 h-5" /> },
     { name: "Krishiv Swain", designation: "Lecturer in Commerce", icon: <Users className="w-5 h-5" /> },
     { name: "Mrs P Pradhan", designation: "Lect. in Commerce", icon: <Users className="w-5 h-5" /> },
     { name: "N. Neeraja", designation: "Lect. in Commerce", icon: <Users className="w-5 h-5" /> },

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo.jpeg';
 
 const navItems = [
   { name: 'Home', href: '#home' },
@@ -27,7 +27,7 @@ export default function Navbar() {
     if (elem) {
       // Use a small timeout to ensure state transitions don't block the scroll behavior
       setTimeout(() => {
-        elem.scrollIntoView({ 
+        elem.scrollIntoView({
           behavior: 'smooth',
           block: 'start'
         });

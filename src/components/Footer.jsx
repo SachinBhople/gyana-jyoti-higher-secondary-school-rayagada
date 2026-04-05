@@ -1,6 +1,6 @@
 import { Facebook, Twitter, Instagram, Linkedin, MapPin, Phone, Mail } from 'lucide-react';
 import { FaWhatsapp } from 'react-icons/fa';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo.jpeg';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
