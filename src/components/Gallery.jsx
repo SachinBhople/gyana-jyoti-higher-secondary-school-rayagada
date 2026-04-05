@@ -28,6 +28,106 @@ import program19 from "../assets/program19.jpeg";
 import program20 from "../assets/program20.jpeg";
 import program21 from "../assets/program21.jpeg";
 
+import imga from "../assets/1.jpeg";
+import imgb from "../assets/2.jpeg";
+import imgc from "../assets/3.jpeg";
+import imgd from "../assets/4.jpeg";
+import img5 from "../assets/5.jpeg";
+import img6 from "../assets/6.jpeg";
+import img7 from "../assets/7.jpeg";
+import img8 from "../assets/8.jpeg";
+import img9 from "../assets/9.jpeg";
+import img10 from "../assets/10.jpeg";
+import img11 from "../assets/11.jpeg";
+import img12 from "../assets/12.jpeg";
+import img13 from "../assets/13.jpeg";
+import img14 from "../assets/14.jpeg";
+import img15 from "../assets/15.jpeg";
+import img16 from "../assets/16.jpeg";
+import img17 from "../assets/17.jpeg";
+import img18 from "../assets/18.jpeg";
+import img19 from "../assets/19.jpeg";
+import img20 from "../assets/20.jpeg";
+import img21 from "../assets/21.jpeg";
+import img22 from "../assets/22.jpeg";
+import img23 from "../assets/23.jpeg";
+import img24 from "../assets/24.jpeg";
+import img25 from "../assets/25.jpeg";
+import img26 from "../assets/26.jpeg";
+import img27 from "../assets/27.jpeg";
+import img28 from "../assets/28.jpeg";
+import img29 from "../assets/29.jpeg";
+import img30 from "../assets/30.jpeg";
+import img31 from "../assets/31.jpeg";
+import img32 from "../assets/32.jpeg";
+
+import img34 from "../assets/34.jpeg";
+import img35 from "../assets/35.jpeg";
+import img36 from "../assets/36.jpeg";
+import img37 from "../assets/37.jpeg";
+import img38 from "../assets/38.jpeg";
+import img39 from "../assets/39.jpeg";
+import img40 from "../assets/40.jpeg";
+import img41 from "../assets/41.jpeg";
+import img42 from "../assets/42.jpeg";
+import img43 from "../assets/43.jpeg";
+import img44 from "../assets/44.jpeg";
+import img45 from "../assets/45.jpeg";
+import img46 from "../assets/46.jpeg";
+import img47 from "../assets/47.jpeg";
+import img48 from "../assets/48.jpeg";
+import img49 from "../assets/49.jpeg";
+import img50 from "../assets/50.jpeg";
+import img51 from "../assets/51.jpeg";
+import img52 from "../assets/52.jpeg";
+import img53 from "../assets/53.jpeg";
+import img54 from "../assets/54.jpeg";
+import img55 from "../assets/55.jpeg";
+import img56 from "../assets/56.jpeg";
+import img57 from "../assets/57.jpeg";
+import img58 from "../assets/58.jpeg";
+import img59 from "../assets/59.jpeg";
+import img60 from "../assets/60.jpeg";
+import img61 from "../assets/61.jpeg";
+import img62 from "../assets/62.jpeg";
+import img63 from "../assets/63.jpeg";
+import img64 from "../assets/64.jpeg";
+import img65 from "../assets/65.jpeg";
+import img66 from "../assets/66.jpeg";
+import img67 from "../assets/67.jpeg";
+import img68 from "../assets/68.jpeg";
+import img69 from "../assets/69.jpeg";
+import img70 from "../assets/70.jpeg";
+import img71 from "../assets/71.jpeg";
+import img72 from "../assets/72.jpeg";
+import img73 from "../assets/73.jpeg";
+import img74 from "../assets/74.jpeg";
+import img75 from "../assets/75.jpeg";
+import img76 from "../assets/76.jpeg";
+import img77 from "../assets/77.jpeg";
+import img78 from "../assets/78.jpeg";
+import img79 from "../assets/79.jpeg";
+import img80 from "../assets/80.jpeg";
+import img81 from "../assets/81.jpeg";
+import img82 from "../assets/82.jpeg";
+import img83 from "../assets/83.jpeg";
+import img84 from "../assets/84.jpeg";
+import img85 from "../assets/85.jpeg";
+import img86 from "../assets/86.jpeg";
+import img87 from "../assets/87.jpeg";
+import img88 from "../assets/88.jpeg";
+import img89 from "../assets/89.jpeg";
+
+import img91 from "../assets/91.jpeg";
+import img92 from "../assets/92.jpeg";
+import img93 from "../assets/93.jpeg";
+import img94 from "../assets/94.jpeg";
+import img95 from "../assets/95.jpeg";
+import img96 from "../assets/96.jpeg";
+import img97 from "../assets/97.jpeg";
+import img98 from "../assets/98.jpeg";
+import img99 from "../assets/99.jpeg";
+
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState(null);
   const [filter, setFilter] = useState('All');
@@ -57,9 +157,108 @@ export default function Gallery() {
     { src: program19, alt: 'students', category: 'Class Room' },
     { src: program20, alt: 'students', category: 'Class Room' },
     { src: program21, alt: 'students', category: 'Class Room' },
+    { src: imga, alt: 'other', category: 'Other' },
+    { src: imgb, alt: 'other', category: 'Other' },
+    { src: imgc, alt: 'other', category: 'Other' },
+    { src: imgd, alt: 'other', category: 'Other' },
+    { src: img5, alt: 'other', category: 'Other' },
+    { src: img6, alt: 'other', category: 'Other' },
+    { src: img7, alt: 'other', category: 'Other' },
+    { src: img8, alt: 'other', category: 'Other' },
+    { src: img9, alt: 'other', category: 'Other' },
+    { src: img10, alt: 'other', category: 'Other' },
+    { src: img11, alt: 'other', category: 'Other' },
+    { src: img12, alt: 'other', category: 'Other' },
+    { src: img13, alt: 'other', category: 'Other' },
+    { src: img14, alt: 'other', category: 'Other' },
+    { src: img15, alt: 'other', category: 'Other' },
+    { src: img16, alt: 'other', category: 'Other' },
+    { src: img17, alt: 'other', category: 'Other' },
+    { src: img18, alt: 'other', category: 'Other' },
+    { src: img19, alt: 'other', category: 'Other' },
+    { src: img20, alt: 'other', category: 'Other' },
+    { src: img21, alt: 'other', category: 'Other' },
+    { src: img22, alt: 'other', category: 'Other' },
+    { src: img23, alt: 'other', category: 'Other' },
+    { src: img24, alt: 'other', category: 'Other' },
+    { src: img25, alt: 'other', category: 'Other' },
+    { src: img26, alt: 'other', category: 'Other' },
+    { src: img27, alt: 'other', category: 'Other' },
+    { src: img28, alt: 'other', category: 'Other' },
+    { src: img29, alt: 'other', category: 'Other' },
+    { src: img30, alt: 'other', category: 'Other' },
+    { src: img31, alt: 'other', category: 'Other' },
+    { src: img32, alt: 'other', category: 'Other' },
+
+    { src: img34, alt: 'other', category: 'Other' },
+    { src: img35, alt: 'other', category: 'Other' },
+    { src: img36, alt: 'other', category: 'Other' },
+    { src: img37, alt: 'other', category: 'Other' },
+    { src: img38, alt: 'other', category: 'Other' },
+    { src: img39, alt: 'other', category: 'Other' },
+    { src: img40, alt: 'other', category: 'Other' },
+    { src: img41, alt: 'other', category: 'Other' },
+    { src: img42, alt: 'other', category: 'Other' },
+    { src: img43, alt: 'other', category: 'Other' },
+    { src: img44, alt: 'other', category: 'Other' },
+    { src: img45, alt: 'other', category: 'Other' },
+    { src: img46, alt: 'other', category: 'Other' },
+    { src: img47, alt: 'other', category: 'Other' },
+    { src: img48, alt: 'other', category: 'Other' },
+    { src: img49, alt: 'other', category: 'Other' },
+    { src: img50, alt: 'other', category: 'Other' },
+    { src: img51, alt: 'other', category: 'Other' },
+    { src: img52, alt: 'other', category: 'Other' },
+    { src: img53, alt: 'other', category: 'Other' },
+    { src: img54, alt: 'other', category: 'Other' },
+    { src: img55, alt: 'other', category: 'Other' },
+    { src: img56, alt: 'other', category: 'Other' },
+    { src: img57, alt: 'other', category: 'Other' },
+    { src: img58, alt: 'other', category: 'Other' },
+    { src: img59, alt: 'other', category: 'Other' },
+    { src: img60, alt: 'other', category: 'Other' },
+    { src: img61, alt: 'other', category: 'Other' },
+    { src: img62, alt: 'other', category: 'Other' },
+    { src: img63, alt: 'other', category: 'Other' },
+    { src: img64, alt: 'other', category: 'Other' },
+    { src: img65, alt: 'other', category: 'Other' },
+    { src: img66, alt: 'other', category: 'Other' },
+    { src: img67, alt: 'other', category: 'Other' },
+    { src: img68, alt: 'other', category: 'Other' },
+    { src: img69, alt: 'other', category: 'Other' },
+    { src: img70, alt: 'other', category: 'Other' },
+    { src: img71, alt: 'other', category: 'Other' },
+    { src: img72, alt: 'other', category: 'Other' },
+    { src: img73, alt: 'other', category: 'Other' },
+    { src: img74, alt: 'other', category: 'Other' },
+    { src: img75, alt: 'other', category: 'Other' },
+    { src: img76, alt: 'other', category: 'Other' },
+    { src: img77, alt: 'other', category: 'Other' },
+    { src: img78, alt: 'other', category: 'Other' },
+    { src: img79, alt: 'other', category: 'Other' },
+    { src: img80, alt: 'other', category: 'Other' },
+    { src: img81, alt: 'other', category: 'Other' },
+    { src: img82, alt: 'other', category: 'Other' },
+    { src: img83, alt: 'other', category: 'Other' },
+    { src: img84, alt: 'other', category: 'Other' },
+    { src: img85, alt: 'other', category: 'Other' },
+    { src: img86, alt: 'other', category: 'Other' },
+    { src: img87, alt: 'other', category: 'Other' },
+    { src: img88, alt: 'other', category: 'Other' },
+    { src: img89, alt: 'other', category: 'Other' },
+
+    { src: img91, alt: 'other', category: 'Other' },
+    { src: img92, alt: 'other', category: 'Other' },
+    { src: img93, alt: 'other', category: 'Other' },
+    { src: img94, alt: 'other', category: 'Other' },
+    { src: img95, alt: 'other', category: 'Other' },
+    { src: img96, alt: 'other', category: 'Other' },
+    { src: img97, alt: 'other', category: 'Other' },
+    { src: img98, alt: 'other', category: 'Other' },
+    { src: img99, alt: 'other', category: 'Other' },
   ], []);
 
-  const categories = ['All', 'Campus', 'Program', 'Activities', 'Events', "Class Room"];
+  const categories = ['All', 'Campus', 'Program', 'Activities', 'Events', "Class Room", "Other"];
 
   const filteredImages = filter === 'All'
     ? images
