@@ -18,6 +18,16 @@ import program10 from '../assets/program-10.jpeg';
 import program11 from '../assets/program-11.jpeg';
 import program12 from '../assets/program-12.jpeg';
 
+import program13 from "../assets/program13.jpeg";
+import program14 from "../assets/program14.jpeg";
+import program15 from "../assets/program15.jpeg";
+import program16 from "../assets/program16.jpeg";
+import program17 from "../assets/program17.jpeg";
+import program18 from "../assets/program18.jpeg";
+import program19 from "../assets/program19.jpeg";
+import program20 from "../assets/program20.jpeg";
+import program21 from "../assets/program21.jpeg";
+
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState(null);
   const [filter, setFilter] = useState('All');
@@ -38,12 +48,21 @@ export default function Gallery() {
     { src: program10, alt: 'Excursion Trip', category: 'Events' },
     { src: program11, alt: 'Tree Plantation', category: 'Activities' },
     { src: program12, alt: 'Independence Day', category: 'Program' },
+    { src: program13, alt: 'students', category: 'Class Room' },
+    { src: program14, alt: 'students', category: 'Class Room' },
+    { src: program15, alt: 'students', category: 'Class Room' },
+    { src: program16, alt: 'students', category: 'Class Room' },
+    { src: program17, alt: 'students', category: 'Class Room' },
+    { src: program18, alt: 'students', category: 'Class Room' },
+    { src: program19, alt: 'students', category: 'Class Room' },
+    { src: program20, alt: 'students', category: 'Class Room' },
+    { src: program21, alt: 'students', category: 'Class Room' },
   ], []);
 
-  const categories = ['All', 'Campus', 'Program', 'Activities', 'Events'];
+  const categories = ['All', 'Campus', 'Program', 'Activities', 'Events', "Class Room"];
 
-  const filteredImages = filter === 'All' 
-    ? images 
+  const filteredImages = filter === 'All'
+    ? images
     : images.filter(img => img.category === filter);
 
   return (
@@ -62,7 +81,7 @@ export default function Gallery() {
           >
             <Camera className="w-6 h-6 text-orange-600" />
           </motion.div>
-          
+
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -71,13 +90,13 @@ export default function Gallery() {
           >
             Photo <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-red-600 uppercase">Gallery</span>
           </motion.h2>
-          
+
           <motion.p
-             initial={{ opacity: 0, y: 20 }}
-             whileInView={{ opacity: 1, y: 0 }}
-             viewport={{ once: true }}
-             transition={{ delay: 0.1 }}
-             className="text-gray-500 max-w-2xl mx-auto text-lg mb-12 font-medium"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="text-gray-500 max-w-2xl mx-auto text-lg mb-12 font-medium"
           >
             A visual journey through the excellence, activities, and vibrant campus life of Gyana Jyoti Higher Secondary School.
           </motion.p>
@@ -92,11 +111,10 @@ export default function Gallery() {
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
                 onClick={() => setFilter(cat)}
-                className={`px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 ${
-                  filter === cat 
-                  ? 'bg-orange-600 text-white shadow-lg shadow-orange-200 ring-4 ring-orange-50' 
+                className={`px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 ${filter === cat
+                  ? 'bg-orange-600 text-white shadow-lg shadow-orange-200 ring-4 ring-orange-50'
                   : 'bg-white text-gray-600 hover:bg-gray-50 border border-gray-100'
-                }`}
+                  }`}
               >
                 {cat}
               </motion.button>
@@ -104,7 +122,7 @@ export default function Gallery() {
           </div>
         </div>
 
-        <motion.div 
+        <motion.div
           layout
           className="columns-1 sm:columns-2 lg:columns-3 gap-8 space-y-8"
         >
@@ -127,28 +145,28 @@ export default function Gallery() {
                     className="w-full h-auto object-cover transform transition-transform duration-1000 ease-out group-hover:scale-110"
                     loading="lazy"
                   />
-                  
+
                   {/* Glass Overlay on Hover */}
                   <div className="absolute inset-0 bg-gradient-to-t from-orange-600/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                     <div className="absolute inset-0 flex flex-col justify-end p-8">
-                       <motion.div 
-                         initial={{ y: 20, opacity: 0 }}
-                         whileHover={{ y: 0, opacity: 1 }}
-                         className="flex items-center justify-between"
-                       >
-                         <div>
-                            <span className="inline-block px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-white text-[10px] font-bold uppercase tracking-widest mb-2 border border-white/30">
-                              {image.category}
-                            </span>
-                            <h4 className="text-white font-bold text-xl leading-tight">
-                              {image.alt}
-                            </h4>
-                         </div>
-                         <div className="p-3 bg-white text-orange-600 rounded-full shadow-lg group-hover:rotate-[360deg] transition-transform duration-700">
-                           <Maximize2 className="w-5 h-5" />
-                         </div>
-                       </motion.div>
-                     </div>
+                    <div className="absolute inset-0 flex flex-col justify-end p-8">
+                      <motion.div
+                        initial={{ y: 20, opacity: 0 }}
+                        whileHover={{ y: 0, opacity: 1 }}
+                        className="flex items-center justify-between"
+                      >
+                        <div>
+                          <span className="inline-block px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-white text-[10px] font-bold uppercase tracking-widest mb-2 border border-white/30">
+                            {image.category}
+                          </span>
+                          <h4 className="text-white font-bold text-xl leading-tight">
+                            {image.alt}
+                          </h4>
+                        </div>
+                        <div className="p-3 bg-white text-orange-600 rounded-full shadow-lg group-hover:rotate-[360deg] transition-transform duration-700">
+                          <Maximize2 className="w-5 h-5" />
+                        </div>
+                      </motion.div>
+                    </div>
                   </div>
                 </div>
               </motion.div>
@@ -168,7 +186,7 @@ export default function Gallery() {
             onClick={() => setSelectedImage(null)}
           >
             <div className="absolute inset-0 bg-black/95 backdrop-blur-md" />
-            
+
             <motion.button
               className="absolute top-6 right-6 text-white hover:text-orange-500 transition-colors p-3 bg-white/10 rounded-full z-10"
               whileHover={{ rotate: 90, scale: 1.1 }}
@@ -177,9 +195,9 @@ export default function Gallery() {
             >
               <X className="w-8 h-8" />
             </motion.button>
-            
+
             <figure className="relative max-w-5xl w-full h-full flex flex-col items-center justify-center gap-6 z-0">
-               <motion.img
+              <motion.img
                 initial={{ scale: 0.9, opacity: 0, rotateY: 20 }}
                 animate={{ scale: 1, opacity: 1, rotateY: 0 }}
                 exit={{ scale: 0.9, opacity: 0, rotateY: -20 }}
@@ -189,12 +207,12 @@ export default function Gallery() {
                 className="max-w-full max-h-[80vh] rounded-[2rem] shadow-[0_0_100px_rgba(255,165,0,0.1)] object-contain ring-1 ring-white/20"
                 onClick={(e) => e.stopPropagation()}
               />
-              
-              <motion.figcaption 
-                 initial={{ y: 20, opacity: 0 }}
-                 animate={{ y: 0, opacity: 1 }}
-                 transition={{ delay: 0.2 }}
-                 className="text-center bg-white/10 backdrop-blur-xl px-8 py-6 rounded-[2rem] border border-white/10 max-w-lg w-full"
+
+              <motion.figcaption
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.2 }}
+                className="text-center bg-white/10 backdrop-blur-xl px-8 py-6 rounded-[2rem] border border-white/10 max-w-lg w-full"
               >
                 <span className="text-orange-400 font-black uppercase tracking-[0.2em] text-[10px] mb-2 block">
                   {selectedImage.category}
