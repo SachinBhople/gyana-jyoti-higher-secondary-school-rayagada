@@ -30,6 +30,7 @@ function App() {
       <Footer />
       <FloatingWhatsApp />
       <FloatingInstagram />
+      {/* comment  */}
     </div>
   );
 }
