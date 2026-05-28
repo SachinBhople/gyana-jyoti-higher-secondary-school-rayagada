@@ -149,7 +149,7 @@ import img118 from "../assets/118.jpeg";
 import img119 from "../assets/119.jpeg";
 import img120 from "../assets/120.jpeg";
 import img122 from "../assets/122.jpeg";
-import imagc1 from "../assets/campus/img1.jpeg"
+
 
 
 
@@ -158,8 +158,6 @@ export default function Gallery() {
   const [filter, setFilter] = useState('All');
 
   const images = useMemo(() => [
-    { src: img1, alt: 'School Campus', category: 'Campus' },
-
     { src: img2, alt: 'Classroom Activity', category: 'Activities' },
     { src: img3, alt: 'School Functions', category: 'Events' },
     { src: program1, alt: 'Inauguration Ceremony', category: 'Program' },
@@ -306,7 +304,7 @@ export default function Gallery() {
     { src: img122, alt: 'other', category: 'Other' },
   ], []);
 
-  const categories = ['All', 'Campus', 'Program', 'Activities', 'Events', "Class Room", "Other"];
+  const categories = ['All', 'Program', 'Activities', 'Events', "Class Room", "Other"];
 
   const filteredImages = filter === 'All'
     ? images
