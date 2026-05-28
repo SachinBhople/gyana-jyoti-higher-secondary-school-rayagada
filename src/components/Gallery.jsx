@@ -163,7 +163,7 @@ import imgc10 from "../assets/campus/img10.jpeg";
 import imgc11 from "../assets/campus/img11.jpeg";
 
 
-import events1 from "../assets/photos/imge1.jpeg";
+
 import events2 from "../assets/photos/imge2.jpeg";
 import events3 from "../assets/photos/imge3.jpeg";
 import events4 from "../assets/photos/imge4.jpeg";
@@ -204,7 +204,6 @@ export default function Gallery() {
     { src: program8, alt: 'Music Class', category: 'Activities' },
     { src: program9, alt: 'Annual Meet', category: 'Events' },
     { src: program10, alt: 'Excursion Trip', category: 'Events' },
-    { src: events1, alt: "Events", category: "Events" },
     { src: events2, alt: "Events", category: "Events" },
     { src: events3, alt: "Events", category: "Events" },
     { src: events4, alt: "Events", category: "Events" },
