@@ -22,6 +22,12 @@ export default function Faculty() {
     { name: "Suchismitha pradhan", designation: "PRO/DEO", icon: <Users className="w-5 h-5" /> },
     { name: "Sohan Kumar", designation: "Supporting Staff", icon: <Users className="w-5 h-5" /> },
     { name: "Dipani Hial", designation: "Supporting Staff", icon: <Users className="w-5 h-5" /> },
+    { name: "Sumitra Naik", designation: "Arts Mentor", icon: <Users className="w-5 h-5" /> },
+    { name: "G.Vedhasri", designation: "Commerce Mentor", icon: <Users className="w-5 h-5" /> },
+    { name: "Nisithh Kuumarr Palo", designation: "Computer teacher", icon: <Users className="w-5 h-5" /> },
+    {
+      name: "Balaji Padhi", designation: "Computer teacher", icon: <Users className="w - 5 h- 5" />
+    },
   ];
 
   return (

@@ -149,6 +149,31 @@ import img118 from "../assets/118.jpeg";
 import img119 from "../assets/119.jpeg";
 import img120 from "../assets/120.jpeg";
 import img122 from "../assets/122.jpeg";
+import imagc1 from "../assets/campus/img1.jpeg"
+import imgc1 from "../assets/campus/img1.jpeg";
+import imgc2 from "../assets/campus/img2.jpeg";
+import imgc3 from "../assets/campus/img3.jpeg";
+import imgc4 from "../assets/campus/img4.jpeg";
+import imgc5 from "../assets/campus/img5.jpeg";
+import imgc6 from "../assets/campus/img6.jpeg";
+import imgc7 from "../assets/campus/img7.jpeg";
+import imgc8 from "../assets/campus/imag8.jpeg";
+import imgc9 from "../assets/campus/img9.jpeg";
+import imgc10 from "../assets/campus/img10.jpeg";
+import imgc11 from "../assets/campus/img11.jpeg";
+
+
+import events1 from "../assets/photos/imge1.jpeg";
+import events2 from "../assets/photos/imge2.jpeg";
+import events3 from "../assets/photos/imge3.jpeg";
+import events4 from "../assets/photos/imge4.jpeg";
+import events5 from "../assets/photos/imge5.jpeg";
+import events6 from "../assets/photos/imge6.jpeg";
+import events7 from "../assets/photos/imge7.jpeg";
+
+
+import events10 from "../assets/photos/imge10.jpeg";
+import events11 from "../assets/photos/imge11.jpeg";
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -156,6 +181,17 @@ export default function Gallery() {
 
   const images = useMemo(() => [
     { src: img1, alt: 'School Campus', category: 'Campus' },
+    { src: imgc1, alt: "College Campus", category: "Campus" },
+    { src: imgc2, alt: "College Campus", category: "Campus" },
+    { src: imgc3, alt: "College Campus", category: "Campus" },
+    { src: imgc4, alt: "College Campus", category: "Campus" },
+    { src: imgc5, alt: "College Campus", category: "Campus" },
+    { src: imgc6, alt: "College Campus", category: "Campus" },
+    { src: imgc7, alt: "College Campus", category: "Campus" },
+    { src: imgc8, alt: "College Campus", category: "Campus" },
+    { src: imgc9, alt: "College Campus", category: "Campus" },
+    { src: imgc10, alt: "College Campus", category: "Campus" },
+    { src: imgc11, alt: "College Campus", category: "Campus" },
     { src: img2, alt: 'Classroom Activity', category: 'Activities' },
     { src: img3, alt: 'School Functions', category: 'Events' },
     { src: program1, alt: 'Inauguration Ceremony', category: 'Program' },
@@ -168,6 +204,17 @@ export default function Gallery() {
     { src: program8, alt: 'Music Class', category: 'Activities' },
     { src: program9, alt: 'Annual Meet', category: 'Events' },
     { src: program10, alt: 'Excursion Trip', category: 'Events' },
+    { src: events1, alt: "Events", category: "Events" },
+    { src: events2, alt: "Events", category: "Events" },
+    { src: events3, alt: "Events", category: "Events" },
+    { src: events4, alt: "Events", category: "Events" },
+    { src: events5, alt: "Events", category: "Events" },
+    { src: events6, alt: "Events", category: "Events" },
+    { src: events7, alt: "Events", category: "Events" },
+
+
+    { src: events10, alt: "Events", category: "Events" },
+    { src: events11, alt: "Events", category: "Events" },
     { src: program11, alt: 'Tree Plantation', category: 'Activities' },
     { src: program12, alt: 'Independence Day', category: 'Program' },
     { src: program13, alt: 'students', category: 'Class Room' },

@@ -9,6 +9,10 @@ import Admission from './components/Admission';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
+import Photos from './components/Photos';
+import Instagram from './components/Instagram';
+import FloatingInstagram from './components/Instagram';
+
 
 function App() {
   return (
@@ -20,10 +24,12 @@ function App() {
       <section id="facilities" className="scroll-mt-20 lg:scroll-mt-24"><Facilities /></section>
       <section id="rules" className="scroll-mt-20 lg:scroll-mt-24"><Rules /></section>
       <section id="gallery" className="scroll-mt-20 lg:scroll-mt-24"><Gallery /></section>
+      <section id="photos" className="scroll-mt-20 lg:scroll-mt-24"><Photos /></section>
       <section id="admission" className="scroll-mt-20 lg:scroll-mt-24"><Admission /></section>
       <section id="contact" className="scroll-mt-20 lg:scroll-mt-24"><Contact /></section>
       <Footer />
       <FloatingWhatsApp />
+      <FloatingInstagram />
     </div>
   );
 }
