@@ -164,16 +164,7 @@ import imgc11 from "../assets/campus/img11.jpeg";
 
 
 
-import events2 from "../assets/photos/imge2.jpeg";
-import events3 from "../assets/photos/imge3.jpeg";
-import events4 from "../assets/photos/imge4.jpeg";
-import events5 from "../assets/photos/imge5.jpeg";
-import events6 from "../assets/photos/imge6.jpeg";
-import events7 from "../assets/photos/imge7.jpeg";
 
-
-import events10 from "../assets/photos/imge10.jpeg";
-import events11 from "../assets/photos/imge11.jpeg";
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -204,16 +195,6 @@ export default function Gallery() {
     { src: program8, alt: 'Music Class', category: 'Activities' },
     { src: program9, alt: 'Annual Meet', category: 'Events' },
     { src: program10, alt: 'Excursion Trip', category: 'Events' },
-    { src: events2, alt: "Events", category: "Events" },
-    { src: events3, alt: "Events", category: "Events" },
-    { src: events4, alt: "Events", category: "Events" },
-    { src: events5, alt: "Events", category: "Events" },
-    { src: events6, alt: "Events", category: "Events" },
-    { src: events7, alt: "Events", category: "Events" },
-
-
-    { src: events10, alt: "Events", category: "Events" },
-    { src: events11, alt: "Events", category: "Events" },
     { src: program11, alt: 'Tree Plantation', category: 'Activities' },
     { src: program12, alt: 'Independence Day', category: 'Program' },
     { src: program13, alt: 'students', category: 'Class Room' },
